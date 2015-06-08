@@ -54,5 +54,5 @@ gpgcheck=0
 [priv]
 name=Priv Yum Repository
 baseurl=http://192.168.80.133/yum
-enabled=1
+enabled=0
 gpgcheck=0
