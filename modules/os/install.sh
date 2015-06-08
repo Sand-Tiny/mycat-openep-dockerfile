@@ -90,7 +90,8 @@ hardstatus alwayslastline
 hardstatus string "\${-}%{.0c}%-w%{.y0}%f%n %t%{-}%+w %=[%H] %c | Load: %l"
 EOF
 
-cat >> /root/.config/htop/htoprc << EOF
+mkdir -p /root/.config/htop
+cat > /root/.config/htop/htoprc << EOF
 hide_threads=0
 hide_kernel_threads=1
 hide_userland_threads=1

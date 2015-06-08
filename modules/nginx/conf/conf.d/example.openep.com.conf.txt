@@ -3,6 +3,7 @@ server {
 
     location /fcgiexample {
         root /opt/www/phpexample;
+        try_files $uri $uri/ /index.php;
         include php.conf;
         include expire.conf;
     }

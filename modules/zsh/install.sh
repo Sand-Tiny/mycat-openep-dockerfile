@@ -4,8 +4,8 @@
 
 yum -y install zsh
 
-if [ -d oh-my-zsh ]; then
-    cp -a oh-my-zsh ~/.oh-my-zsh
+if [ -d "../cache/oh-my-zsh" ]; then
+    cp -a ../cache/oh-my-zsh ~/.oh-my-zsh
 else
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi

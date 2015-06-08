@@ -33,18 +33,6 @@ mirrorlist=http://rpms.famillecollet.com/enterprise/6/php56/mirror
 enabled=0
 gpgcheck=0
 
-[mysql-connectors-community]
-name=MySQL Connectors Community
-baseurl=http://repo.mysql.com/yum/mysql-connectors-community/el/6/$basearch/
-enabled=0
-gpgcheck=0
-
-[mysql-tools-community]
-name=MySQL Tools Community
-baseurl=http://repo.mysql.com/yum/mysql-tools-community/el/6/$basearch/
-enabled=0
-gpgcheck=0
-
 [mysql56-community]
 name=MySQL 5.6 Community Server
 baseurl=http://repo.mysql.com/yum/mysql-5.6-community/el/6/$basearch/
@@ -65,7 +53,6 @@ gpgcheck=0
 
 [priv]
 name=Priv Yum Repository
-baseurl=http://192.168.1.112/yum
+baseurl=http://192.168.80.133/yum
 enabled=1
 gpgcheck=0
-priority=2

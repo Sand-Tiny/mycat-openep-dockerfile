@@ -1,8 +1,9 @@
 #!/bin/bash
 
-pkg="Mycat-server-1.4-beta-20150604171601-linux.tar.gz"
+ver='1.4-beta'
+pkg="Mycat-server-${ver}-20150604171601-linux.tar.gz"
 
-[ ! -f ${pkg} ] && wget https://raw.githubusercontent.com/MyCATApache/Mycat-download/master/1.4-beta/Mycat-server-1.4-beta-20150604171601-linux.tar.gz
+[ -f "../cache/${pkg}" ] && pkg="../cache/${pkg}" || wget https://raw.githubusercontent.com/MyCATApache/Mycat-download/master/${ver}/${pkg}
 
 tar zxf ${pkg} -C /opt
 
